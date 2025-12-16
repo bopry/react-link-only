@@ -1,6 +1,17 @@
+const root = document.getElementById('root');
+
 function App() {
-    return <h1>Hello, React without build!</h1>;
+  const [color, setColor] = React.useState('red');
+
+  return (
+    <h1
+      style={{ color }}
+      onClick={() => setColor(color === 'red' ? 'blue' : 'red')}
+    >
+      Kjnkenf
+    </h1>
+  );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+ReactDOM.render(<App />, document.getElementById('root'));
+
