@@ -8,7 +8,7 @@ function App() {
       style={{ color }}
       onClick={() => setColor(color === 'red' ? 'blue' : 'red')}
     >
-      Kjnkenf
+      Привет)
     </h1>
   );
 }
