@@ -1,0 +1,9 @@
+h1.disabled {
+    color: #0007;
+    transition: .3s;
+}
+
+h1.enabled {
+    color: #000;
+    transition: .3s;
+}

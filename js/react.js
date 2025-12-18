@@ -1,12 +1,43 @@
-function App() {
-  const [color, setColor] = React.useState('red');
 
+
+
+
+
+/////////////////////////////////////////////////////
+
+function Header() {
+  const [about, setAbout] = React.useState('n');
   return (
-    <h1
-      style={{ backgroundColor: color }}
-      onClick={() => setColor(color === 'red' ? 'blue' : 'red')}
-    >
-      Привет)
-    </h1>
+    <ul>
+      <li onClick={()=>setAbout(about === 'n' ? 'y' : 'n')} style={{color : about === 'n' ? 'red' : 'blue'}}>About</li>
+      <li>Main</li>
+      <li>Contacts</li>
+    </ul>
   );
 }
+
+function Main() {
+
+  return;
+}
+
+function Footer() {
+
+  return;
+}
+
+/////////////////////////////////////////////////////////
+
+function App() {
+  const [text, setText] = React.useState('Hello');
+
+  return (
+    <div>
+      <Header />
+      <Main />
+      <Footer />
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
